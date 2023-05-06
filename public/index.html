@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>Dev. Portafolio</title>
+    <!-- Style of the plugin -->
+    <link rel="stylesheet" href="plugin/components/Font Awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="plugin/whatsapp-chat-support.css">
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+
+    <!-- Button Whatsapp Structure -->
+  <div class="whatsapp_chat_support wcs_fixed_right" id="button-w">
+    <div class="wcs_button_label">
+            Contáctame
+        </div>  
+    <div class="wcs_button wcs_button_circle">
+        <span class="fa fa-whatsapp"></span>
+    </div>  
+ 
+    <div class="wcs_popup">
+        <div class="wcs_popup_close">
+            <span class="fa fa-close"></span>
+        </div>
+        <div class="wcs_popup_header">
+            <span class="fa fa-whatsapp"></span>
+            <strong>Whatsapp Personal</strong>
+            
+            <div class="wcs_popup_header_description">Gmail: bruno.henry.1chal@gmail.com</div>
+
+        </div>  
+        <div class="wcs_popup_input" 
+            data-number="948011119"
+            data-availability='{ "monday":"07:00-22:30", "tuesday":"07:00-22:30", "wednesday":"07:7030-22:30", "thursday":"07:00-22:30", "friday":"07:00-22:30", "saturday":"09:00-18:30", "sunday":"09:00-22:30" }'>
+            <input type="text" placeholder="Escribir pregunta!" />
+            <i class="fa fa-play"></i>
+        </div>
+   
+            </div>
+        </div>
+
+
+            <!-- jQuery 1.8+ -->
+        <script src="plugin/components/jQuery/jquery-1.11.3.min.js"></script>
+            <!-- Plugin JS file -->
+        <script src="plugin/components/moment/moment.min.js"></script>
+        <script src="plugin/components/moment/moment-timezone-with-data.min.js"></script> <!-- spanish language (es) -->
+        <script src="plugin/whatsapp-chat-support.js"></script>
+        <script>
+          $('#button-w').whatsappChatSupport({
+                defaultMsg : '',
+            });
+        </script>
+  </body>
+</html>
