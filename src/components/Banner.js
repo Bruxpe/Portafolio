@@ -5,6 +5,7 @@ import { useState, useEffect } from "react";
 import 'animate.css'
 import TrackVisibility from 'react-on-screen';
 import { FaJava } from "react-icons/fa";
+import git from "../Assets/img/marginalia-programming.gif"
 
 
 export const Banner = () =>{
@@ -68,7 +69,7 @@ export const Banner = () =>{
 
                     </Col>
                     <Col xs={12} md={6} xl={5}>
-                    <img src={headerImg} alt="Headder Img"/>    
+                    <img src={git} alt="Headder Img"/>    
                     </Col>
                 </Row>
             </Container>

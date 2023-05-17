@@ -4,6 +4,7 @@ import logo from "../Assets/img/logo.png"
 import faceboook from "../Assets/img/facebook.png"
 import  github from "../Assets/img/github.png"
 import linkendin from "../Assets/img/linkendin.png"
+import cv  from "./CV_Gonzales_Bruno.pdf"
 
 
 export const NavBar = () =>{
@@ -34,9 +35,7 @@ export const NavBar = () =>{
  return(
     <Navbar expand="md" className={scrolled ? "scrolled":""}>
         <Container>
-            {/* <Navbar.Brand href="#home">
-                <img src={logo} alt="Logo" />
-            </Navbar.Brand> */}
+       
             <Navbar.Toggle aria-controls="basic-navbar-nav">
                 <span className="navbar-toggler-icon"></span>
             </Navbar.Toggle>
@@ -52,8 +51,9 @@ export const NavBar = () =>{
                         <a href="https://github.com/Bruxpe"><img src={github} alt="" /></a>
                         <a href="https://www.linkedin.com/in/bruno-gonzales-lorena-1110131b8/"><img src={linkendin} alt="" /></a>
                     </div>
-                    
-                    <button className="vvd" onClick={()=> console.log('connect')}><span>Let's Connect</span></button>
+                    <a href={cv} download>
+                    <button className="cv" ><span>Descargar Cv</span></button>
+                    </a>
                 </span>
             </Navbar.Collapse>
         </Container>
