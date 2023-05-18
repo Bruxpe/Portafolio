@@ -52,7 +52,7 @@ export const NavBar = () =>{
                         <a href="https://www.linkedin.com/in/bruno-gonzales-lorena-1110131b8/"><img src={linkendin} alt="" /></a>
                     </div>
                     <a href={cv} download>
-                    <button className="cv" ><span>Descargar Cv</span></button>
+                    <button className="cv" onClick={() => window.location.href='./CV_Gonzales_Bruno.pdf'} ><span>Descargar Cv</span></button>
                     </a>
                 </span>
             </Navbar.Collapse>
